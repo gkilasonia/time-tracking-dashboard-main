@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "Rubik-Light";
+  font-family: "Rubik-Light"; /* 300 */
   src: url("/fonts/Rubik-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Rubik-Medium";
-  src: url("/fonts/Rubik-Medium.ttf") format("truetype");
+  font-family: "Rubik-Regular"; /* 400 */
+  src: url("/fonts/Rubik-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Rubik-Regular";
-  src: url("/fonts/Rubik-Regular.ttf") format("truetype");
+  font-family: "Rubik-Medium"; /* 500 */
+  src: url("/fonts/Rubik-Medium.ttf") format("truetype");
 }
 
 * {
@@ -31,12 +31,83 @@
   --Dark-blue: hsl(235, 46%, 20%);
   --Desaturated-blue: hsl(235, 45%, 61%);
   --Pale-Blue: hsl(236, 100%, 87%);
+  --White: hsl(0, 0%, 100%);
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "Rubik-Regular", serif;
   background-color: var(--Very-dark-blue);
+  padding: 81px 24px 0 24px;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 81px;
+}
+
+/* Jeremy Robson Section */
+
+.jeremy-robson-section {
+  background-color: var(--Dark-blue);
+  border-radius: 15px;
+}
+
+.image-header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+  padding: 35px 39px 34px 32px;
+  background-color: var(--Blue);
+}
+
+.jeremy-robson-image {
+  width: 64px;
+  height: 64px;
+}
+
+.header-text {
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--Pale-Blue);
+  margin-bottom: 4px;
+}
+
+.header {
+  font-family: "Rubik-Light", serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.16666666;
+  color: var(--White);
+}
+
+.daily-weekly-monthly-container {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
+}
+
+.daily,
+.weekly,
+.monthly {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.16666666;
+  color: var(--Desaturated-blue);
+}
+
+/* Work Section */
+
+.work-section {
+}
+
+/* Footer */
 
 .attribution {
   font-size: 11px;
