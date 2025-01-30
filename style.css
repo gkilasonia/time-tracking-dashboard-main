@@ -88,7 +88,7 @@ main {
 
 .daily-weekly-monthly-container {
   display: flex;
-  padding: 25px 0;
+  padding: 24px 0 25px 0;
   justify-content: space-between;
 }
 
@@ -102,9 +102,144 @@ main {
   color: var(--Desaturated-blue);
 }
 
-/* Work Section */
+/* Common CSS in several HTML elements */
+
+/* Activity section */
+
+.work-section,
+.play-section,
+.study-section,
+.exercise-section,
+.social-section,
+.self-care-section {
+  border-radius: 15px;
+}
+
+/* Background image container */
+
+.work-icon-container,
+.play-icon-container,
+.study-icon-container,
+.exercise-icon-container,
+.social-icon-container,
+.self-care-icon-container {
+  height: 38px;
+  background-repeat: no-repeat;
+}
+
+/* Text container */
+
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: var(--Dark-blue);
+  border-radius: 15px;
+  padding: 28px 24px;
+}
+
+/* Name 3 dots and hours/period container */
+
+.name-three-dots-container,
+.hours-per-period-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Activity name */
+
+.section-name {
+  font-family: "Rubik-Medium", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6666666;
+  color: var(--White);
+}
+
+/* Activity hours */
+
+.hours {
+  font-family: "Rubik-Light", serif;
+  font-size: 32px;
+  line-height: 1.1875;
+  color: var(--White);
+}
+
+/* Activity period */
+
+.per-period {
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--Pale-Blue);
+}
+
+/* Chronological secuance of Activity elements */
+
+/* Work section */
 
 .work-section {
+  background-color: var(--Light-red-work);
+}
+
+.work-icon-container {
+  background-image: url(./images/icon-work.svg);
+  background-position: 93% -10.91px;
+}
+
+/* Play section */
+
+.play-section {
+  background-color: var(--Soft-blue-play);
+}
+
+.play-icon-container {
+  background-image: url(./images/icon-play.svg);
+  background-position: 93% -5px;
+}
+
+/* Study section */
+
+.study-section {
+  background-color: var(--Light-red-study);
+}
+
+.study-icon-container {
+  background-image: url(./images/icon-study.svg);
+  background-position: 93% -6px;
+}
+
+/* Exercise */
+
+.exercise-section {
+  background-color: var(--Lime-green-exercise);
+}
+
+.exercise-icon-container {
+  background-image: url(./images/icon-exercise.svg);
+  background-position: 93% 0px;
+}
+
+/* Social section */
+
+.social-section {
+  background-color: var(--Violet-social);
+}
+
+.social-icon-container {
+  background-image: url(./images/icon-social.svg);
+  background-position: 93% -15px;
+}
+
+/* Self-Care section */
+
+.self-care-section {
+  background-color: var(--Soft-orange-self-care);
+}
+
+.self-care-icon-container {
+  background-image: url(images/icon-self-care.svg);
+  background-position: 93% -11px;
 }
 
 /* Footer */
@@ -112,7 +247,8 @@ main {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--White);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Pale-Blue);
 }
