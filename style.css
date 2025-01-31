@@ -293,7 +293,61 @@ main {
 
   .daily-weekly-monthly-container {
     flex-direction: column;
+    gap: 21px;
     justify-content: unset;
     padding: 26px 155px 32px 32px;
+  }
+
+  .daily,
+  .weekly,
+  .monthly {
+    text-align: unset;
+  }
+
+  .daily:hover,
+  .weekly:hover,
+  .monthly:hover {
+    cursor: pointer;
+    color: var(--White);
+  }
+
+  /* Common CSS in several HTML elements */
+
+  /* Background image container */
+
+  .work-icon-container,
+  .play-icon-container,
+  .study-icon-container,
+  .exercise-icon-container,
+  .social-icon-container,
+  .self-care-icon-container {
+    height: 45px;
+  }
+
+  /* Text container */
+
+  .main-text-container {
+    gap: 24px;
+    padding: 29px 30px 32px 30px;
+  }
+
+  .main-text-container:hover {
+    cursor: pointer;
+  }
+
+  /* Hours/period container */
+
+  .hours-per-period-container {
+    flex-direction: column;
+    gap: 8px;
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  /* Activity hours */
+
+  .hours {
+    font-size: 56px;
+    line-height: 1.1786;
   }
 }
